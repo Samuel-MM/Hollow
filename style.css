@@ -1,0 +1,145 @@
+/* Font section*/
+
+@font-face {
+	font-family: customFont;
+	src: url(assets/LeagueSpartan-Bold.otf);
+}
+
+body {
+	font-family: customFont, serif;
+}
+
+
+/* Navbar section*/
+
+.navbar-light .navbar-nav .nav-link {
+	color: #495057;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #F3C745;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+	color: #F3C745;
+}
+
+
+/* Quote section */
+
+.image-bg {
+	height: 150px;
+	background: url("assets/study-bg.png") no-repeat center;
+	background-size: cover;
+}
+
+.quote {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 26px;
+	line-height: 30px;
+}
+
+cite {
+	font-size: 20px;
+}
+
+
+/* Filter section */
+
+.filters {
+	background-color: #F3C745;
+}
+
+h2 {
+	color: #495057;
+	font-size: 26px;
+	line-height: 20px;
+}
+
+.form-select {
+	width: 20em;
+	cursor: pointer;
+}
+
+
+/* Search section */
+
+.btn-search {
+	color: #495057;
+	width: 200px;
+}
+
+.btn-search:hover {
+	color: #fff;
+}
+
+
+/* Cards section*/
+
+.icon {
+	width: 40px;
+	height: 35px;
+}
+
+.image-card {
+	border-radius: 30px;
+	cursor: pointer;
+	background-position: center;
+	width: 270px;
+	height: 130px;
+}
+
+.image-text {
+	color: #495057;
+	font-weight: bold;
+	background-color: #F3C745;
+	width: 275px;
+	height: 100px;
+	border-radius: 20px;
+	cursor: pointer;
+	line-height: 10px;
+	margin-top: -35px;
+	margin-left: -2px;
+}
+
+.cards {
+	transition: transform .2s;
+}
+
+.cards:hover {
+	transform: scale(1.1);
+}
+
+.logo {
+	width: 250px;
+}
+
+.new {
+	position: relative;
+	left: 75%;
+	top: 60%;
+}
+
+
+/* Media query */
+
+@media (max-width: 700px) {
+	.form-select {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 500px) {
+	.quote {
+		font-size: 20px;
+		line-height: 20px;
+	}
+}
+
+@media (max-width: 340px) {
+	.logo {
+		width: 170px;
+	}
+}
